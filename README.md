@@ -8,11 +8,15 @@
 - [Collection Following System]
 ## Local Installation
 
-NOTE: Before you install the project, you should have [**pipenv**](https://pipenv.pypa.io/en/latest/) and [**Python**](https://www.python.org/downloads/) installed on your machine (which should be included in the default python installation).
+NOTE: Before you install the project, you should have [**pipenv**](https://pipenv.pypa.io/en/latest/) and [**Python**](https://www.python.org/downloads/) installed on your machine. To install pipenv, type this command into your shell:
+
+```bash
+  pip install pipenv
+```
 
 To install the project and run the server on your machine:
 
-1. **Clone the repository** on a directory.
+1. **Clone the repository** into a directory.
 
 ```bash
   git clone https://github.com/pjpdorango/Trackr
@@ -21,7 +25,7 @@ To install the project and run the server on your machine:
 2. Then, **go to the project directory** and **install all of the libraries** with pipenv. The project directory should have a `Pipfile.lock` file containing all of the libraries used (as of now, only Django).
 
 ```bash
-  cd [PATH]/Trackr
+  cd Trackr
   pipenv sync
 ```
 
@@ -33,7 +37,7 @@ To install the project and run the server on your machine:
 
 The server, on default, will be run on your `8000` port.
 
-### Pipenv Alternative
+### Debugging (Pipenv Alternative)
 
 If the `python manage.py runserver` command does not work, and the issue is relating to the django library not being found, simply **install the django library manually**, either through the [website](https://docs.djangoproject.com/en/5.0/topics/install/) or with pip:
 
